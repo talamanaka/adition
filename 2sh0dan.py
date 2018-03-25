@@ -101,7 +101,7 @@ def starting():
 	timestr = time.strftime("%Y%m%d")
 	output_file = "shodan-"+var_country+"-"+var_key+"-"+timestr+".txt"
 	f= open(output_file,"w+")
-	num_lines = sum(1 for line in open('output_file'))
+	num_lines = sum(1 for line in open(output_file))
 	
 
 
