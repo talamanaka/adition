@@ -10,6 +10,7 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 from selenium import webdriver
+import urllib2, ssl , os 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -96,9 +97,11 @@ def starting():
 	global i
 	global output_file
 	i=int(var_page)
-	timestr = time.strftime("%Y%m%d-%H%M%S")
+	#timestr = time.strftime("%Y%m%d-%H%M%S")
+	timestr = time.strftime("%Y%m%d")
 	output_file = "shodan-"+var_country+"-"+var_key+"-"+timestr+".txt"
 	f= open(output_file,"w+")
+	num_lines = sum(1 for line in open('output_file'))
 	
 
 
@@ -271,8 +274,44 @@ def rapport():
 
 
         
-    
-        
+
+###########################################################
+###########################################################
+
+
+def resultat_loop_1():
+	#testsite_array = []
+	global ccc
+	ccc=0
+	with open('output_file') as my_file:
+		#my_file.split('\n')
+		for line in my_file:
+			#testsite_array.append(line)
+			test_resultat(line)
+			ccc+=1
+###########################################################
+###########################################################
+###########################################################
+
+
+
+def test_resultat(inputo):
+	#link = "https://130.207.85.217/"
+	link = inputo
+	request = urllib2.Request(link)
+	web_contenent = urllib2.urlopen(request, context=ssl._create_unverified_context())
+	myfile = web_contenent.read()
+	#sys.stdout.write(link)
+	
+	if 'containers' in myfile:
+		sys.stdout.write("[ "+str(num_lines)+' / '+str(ccc)+"  ] "+link)
+		#ssys.stdout.write('link')
+		sys.stdout.flush()
+		#print link," OK"
+	#else:
+		#print (link+' No ')
+
+###########################################################
     
 
 
@@ -288,4 +327,5 @@ check_exists_by_xpath(xpath)
 check_login()
 search_query()
 check_next()
+resultat_loop_1()
 
