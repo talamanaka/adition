@@ -9,3 +9,6 @@ wget https://github.com/mozilla/geckodriver/releases/download/v0.20.0/geckodrive
 tar -xvf geckodriver-v0.20.0-linux64.tar.gz
 chmod +x geckodriver
 cp geckodriver /usr/bin/geckodriver
+wget https://raw.githubusercontent.com/talamanaka/adition/master/2sh0dan.py
+wget https://raw.githubusercontent.com/talamanaka/adition/master/check.sh
+chmod +x 2sh0dan.py check.sh
