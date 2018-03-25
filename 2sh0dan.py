@@ -118,7 +118,7 @@ def fire_up():
 	try:
 
 		global driver
-		driver = webdriver.Firefox(firefox_binary=binary)
+		driver = webdriver.Firefox()
 		wait = WebDriverWait(driver, 190)
 		print bcolors.OKGREEN+"OK"+bcolors.BOLD +""+bcolors.OKBLUE
 		#driver.get("https://account.shodan.io/login")
