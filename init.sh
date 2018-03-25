@@ -11,4 +11,6 @@ chmod +x geckodriver
 cp geckodriver /usr/bin/geckodriver
 wget https://raw.githubusercontent.com/talamanaka/adition/master/2sh0dan.py
 wget https://raw.githubusercontent.com/talamanaka/adition/master/check.sh
-chmod +x 2sh0dan.py check.sh
+wget https://raw.githubusercontent.com/talamanaka/adition/master/set.sh
+chmod +x 2sh0dan.py check.sh set.sh
+./set.sh
