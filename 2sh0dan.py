@@ -283,7 +283,7 @@ def resultat_loop_1():
 	#testsite_array = []
 	global ccc
 	ccc=0
-	with open('output_file') as my_file:
+	with open(output_file) as my_file:
 		#my_file.split('\n')
 		for line in my_file:
 			#testsite_array.append(line)
