@@ -312,7 +312,20 @@ def test_resultat(inputo):
 		#print (link+' No ')
 
 ###########################################################
-    
+def print_loop3():
+	with open(output_file) as my_file:
+		for line, name in enumerate(my_file, start=1):
+			try:
+				request = urllib2.Request(name)
+				web_contenent = urllib2.urlopen(request, context=ssl._create_unverified_context())
+				recived = web_contenent.read()
+				if 'containers' in recived:
+					print ' [', str(num_lines)+' /',line ,'] ',name.rstrip('\n')
+			except:
+				pass
+
+
+
 
 
     
@@ -328,4 +341,4 @@ check_login()
 search_query()
 check_next()
 #resultat_loop_1()
-
+print_loop3()
