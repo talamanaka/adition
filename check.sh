@@ -18,3 +18,6 @@ do
         ((ii++))
         sed -i 1d $scan
 done <"$scan"
+fin=$(curl -s --upload-file found https://transfer.sh/found;echo)
+echo -e "\n"
+echo "     URL: "$fin
