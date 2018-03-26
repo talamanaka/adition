@@ -29,7 +29,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from lxml import html as lh
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
-#//////////////////////////////////////////////////////////////
+#///////////////////////////////////////////////////////////////
 #query= "Server%3A+Apache-Coyote%2F1.1+Tomcat-5.5"
 xpath= "//*[@type='submit']"
 
@@ -263,6 +263,7 @@ def check_next_btn():
 		print bcolors.OKGREEN+bcolors.BOLD+"END OF SEARCH"+ bcolors.ENDC
 		rapport()
 		print_loop3()
+		pass
 		
 		
 
