@@ -1,3 +1,4 @@
+passwd root 
 apt-add-repository --yes ppa:mozillateam/firefox-next
 apt-get update &&  apt-get install mate-core mate-desktop-environment mate-notification-daemon xrdp python-pip firefox xvfb -y
 
