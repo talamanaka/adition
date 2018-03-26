@@ -262,8 +262,9 @@ def check_next_btn():
 	except NoSuchElementException:
 		print bcolors.OKGREEN+bcolors.BOLD+"END OF SEARCH"+ bcolors.ENDC
 		rapport()
-		return False
-	return True
+		print_loop3()
+		
+		
 
 def rapport():
 	logo()
@@ -341,4 +342,4 @@ check_login()
 search_query()
 check_next()
 #resultat_loop_1()
-print_loop3()
+
