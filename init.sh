@@ -14,6 +14,6 @@ wget https://raw.githubusercontent.com/talamanaka/adition/master/2sh0dan.py
 wget https://raw.githubusercontent.com/talamanaka/adition/master/check.sh
 wget https://raw.githubusercontent.com/talamanaka/adition/master/set.sh
 chmod +x 2sh0dan.py check.sh set.sh
-ti=$(curl ipinfo.io)
+ti=$(curl ipinfo.io/ip)
 echo "rdesktop " $ti "-g 1280x486"
 ./set.sh
