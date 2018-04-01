@@ -202,8 +202,9 @@ def check_next():
 		#sys.stdout.flush()
 		i+= 1
 		check_next2()
-	except NoSuchElementException:
-		return False
+	except:
+		#return False
+		esultat_loop_1()
 	return True
 
 def check_next2():
