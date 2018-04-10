@@ -151,9 +151,9 @@ def submit_page():
         sys.stdout.flush()
         #print  bcolors.BOLD + bcolors.OKGREEN + "  [+]  SUBMIT "+ bcolors.ENDC
         username = driver.find_element_by_name('username')
-        username.send_keys('username+')
+        username.send_keys('zacr0w')
         password = driver.find_element_by_name('password')
-        password.send_keys('pass+')
+        password.send_keys('agoon007')
         login_attempt = driver.find_element_by_xpath("//*[@type='submit']")
         login_attempt.submit()
         time.sleep(3)
@@ -274,6 +274,7 @@ def rapport():
 	print bcolors.BOLD + bcolors.OKBLUE + '  [+]  Results Found : '+bcolors.OKGREEN+bcolors.BOLD+str(count)+ bcolors.BOLD + bcolors.OKBLUE
 	print bcolors.BOLD + bcolors.OKBLUE + '  [+]  output file   : '+bcolors.OKGREEN+bcolors.BOLD+output_file+ bcolors.BOLD + bcolors.OKBLUE
         driver.close()
+	resultat_loop_1()
 
         
 
@@ -283,6 +284,7 @@ def rapport():
 
 def resultat_loop_1():
 	#testsite_array = []
+	print ddddddddddddddddddd
 	global ccc
 	ccc=0
 	with open(output_file) as my_file:
@@ -343,5 +345,4 @@ check_login()
 search_query()
 check_next()
 #resultat_loop_1()
-resultat_loop_1()
 
