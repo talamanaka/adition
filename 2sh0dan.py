@@ -310,8 +310,8 @@ def test_resultat(inputo):
 	#sys.stdout.write(link)
 	
 	if 'containers' in myfile:
-		sys.stdout.write("[ "+str(num_lines)+' / '+str(ccc)+"  ] "+link)
-		#ssys.stdout.write('link')
+		#sys.stdout.write("[ "+str(num_lines)+' / '+str(ccc)+"  ] "+link)
+		sys.stdout.write('link')
 		sys.stdout.flush()
 		#print link," OK"
 	#else:
