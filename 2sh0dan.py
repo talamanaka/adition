@@ -202,9 +202,8 @@ def check_next():
 		#sys.stdout.flush()
 		i+= 1
 		check_next2()
-	except:
-		#return False
-		esultat_loop_1()
+	except NoSuchElementException:
+		return False
 	return True
 
 def check_next2():
@@ -274,7 +273,7 @@ def rapport():
 	print  bcolors.BOLD + bcolors.OKBLUE +"  [+]  SEARCH   For  : "+bcolors.OKGREEN+bcolors.BOLD+str(var_key)+" "+var_country+" "+var_page+bcolors.ENDC
 	print bcolors.BOLD + bcolors.OKBLUE + '  [+]  Results Found : '+bcolors.OKGREEN+bcolors.BOLD+str(count)+ bcolors.BOLD + bcolors.OKBLUE
 	print bcolors.BOLD + bcolors.OKBLUE + '  [+]  output file   : '+bcolors.OKGREEN+bcolors.BOLD+output_file+ bcolors.BOLD + bcolors.OKBLUE
-
+        diver.Dispose()
 
         
 
