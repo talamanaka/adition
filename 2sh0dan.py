@@ -284,7 +284,7 @@ def rapport():
 
 def resultat_loop_1():
 	#testsite_array = []
-	print ddddddddddddddddddd
+	print "ddddddddddddddddddd"
 	global ccc
 	ccc=0
 	with open(output_file) as my_file:
