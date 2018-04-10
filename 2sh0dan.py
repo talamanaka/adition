@@ -32,7 +32,7 @@ from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 #///////////////////////////////////////////////////////////////
 #query= "Server%3A+Apache-Coyote%2F1.1+Tomcat-5.5"
 xpath= "//*[@type='submit']"
-
+global driver
 def logo():
 	
 
@@ -273,7 +273,7 @@ def rapport():
 	print  bcolors.BOLD + bcolors.OKBLUE +"  [+]  SEARCH   For  : "+bcolors.OKGREEN+bcolors.BOLD+str(var_key)+" "+var_country+" "+var_page+bcolors.ENDC
 	print bcolors.BOLD + bcolors.OKBLUE + '  [+]  Results Found : '+bcolors.OKGREEN+bcolors.BOLD+str(count)+ bcolors.BOLD + bcolors.OKBLUE
 	print bcolors.BOLD + bcolors.OKBLUE + '  [+]  output file   : '+bcolors.OKGREEN+bcolors.BOLD+output_file+ bcolors.BOLD + bcolors.OKBLUE
-        diver.Dispose()
+        driver.Dispose()
 
         
 
