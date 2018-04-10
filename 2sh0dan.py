@@ -33,6 +33,7 @@ from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 #query= "Server%3A+Apache-Coyote%2F1.1+Tomcat-5.5"
 xpath= "//*[@type='submit']"
 global driver
+global num_lines
 def logo():
 	
 
