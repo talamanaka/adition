@@ -343,4 +343,5 @@ check_login()
 search_query()
 check_next()
 #resultat_loop_1()
+resultat_loop_1()
 
