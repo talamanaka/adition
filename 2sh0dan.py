@@ -136,6 +136,7 @@ def fire_up():
 		
 def check_exists_by_xpath(xpath):
     try:
+	driver.set_window_size(0, 0)
     	sys.stdout.write('  [+]  Check SHODAN     : ')
     	sys.stdout.flush()
     	driver.get("https://account.shodan.io/login")
