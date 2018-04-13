@@ -9,6 +9,7 @@ echo "Type the password shodan.io , followed by [ENTER]:"
 read pass
 sed -i "s/pass+/$pass/" 2sh0dan.py
 echo $pass\n
+ti=$(curl ipinfo.io/ip)
 
 clear  
 echo "         rdesktop " $ti "-g 1280x886  "
