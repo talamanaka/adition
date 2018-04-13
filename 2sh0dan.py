@@ -65,7 +65,7 @@ def starting():
 		global var_key
 		var_key = sys.argv[1]
 	except:
-		t1=bcolors.BOLD +bcolors.FAIL+"\t\t\t\tYou Must Set Word To Search !!"+bcolors.WARNING+bcolors.BOLD +"\n \t\t\tExemple :"+bcolors.OKGREEN +" python "+sys.argv[0] +" Wrod_search us 1\n"
+		t1=bcolors.BOLD +bcolors.FAIL+"\t\t\t\tYou Must Set Word To Search !!"+bcolors.WARNING+bcolors.BOLD +"\n \t\t\tExemple :"+bcolors.OKGREEN +" python "+sys.argv[0] +" rancher us 1\n"
 		print (centerify(t1.center( 50 )))
 		exit(1)
 	try:
