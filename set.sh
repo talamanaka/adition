@@ -10,6 +10,8 @@ read pass
 sed -i "s/pass+/$pass/" 2sh0dan.py
 echo $pass\n
 
+clear  
+echo "         rdesktop " $ti "-g 1280x886   
 
 
 
