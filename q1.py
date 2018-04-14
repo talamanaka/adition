@@ -34,7 +34,7 @@ global binary
 global driver
 
 #def f13():
-binary = FirefoxBinary('/opt/firefox/firefox-bin')
+binary = FirefoxBinary('/usr/bin/firefox')
 driver = webdriver.Firefox(firefox_binary=binary)
 wait = WebDriverWait(driver, 20)
 
