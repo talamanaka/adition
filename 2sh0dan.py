@@ -209,12 +209,16 @@ def check_next():
 	return True
 
 def check_next2():
-	scrape_results(driver)
-	time.sleep(1)
-	sa_results()
-	time.sleep(1)
-	check_next_btn()
-	time.sleep(1)
+	try:
+		scrape_results(driver)
+	        time.sleep(1)
+	        sa_results()
+	        time.sleep(1)
+	        check_next_btn()
+	        time.sleep(1)
+	except NoSuchElementException:
+		return False
+		
 
 
 
