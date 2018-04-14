@@ -180,11 +180,12 @@ def check_login():
 
 def search_query():
     try:
+	var_key_enc= urllib.quote_plus(var_key)
 
          print  bcolors.BOLD + bcolors.OKBLUE + "  [+]  SEARCH           : "+bcolors.OKGREEN+bcolors.BOLD+str(var_key)+" "+var_country+" "+var_page+bcolors.ENDC
          #driver.get("https://www.shodan.io/search?query="+var_key+"+country%3A%22"+var_country+"%22&page="+int(var_page)) 
          #print ("https://www.shodan.io/search?query="+var_key+"+country%3A%22"+var_country+"%22&page="+var_page)
-         query="https://www.shodan.io/search?query="+var_key+"+country%3A%22"+var_country+"%22&page="+var_page  
+         query="https://www.shodan.io/search?query="+var_key_enc+"+country%3A%22"+var_country+"%22&page="+var_page  
          #print query
          driver.get(query)
 
