@@ -15,9 +15,10 @@ wget https://raw.githubusercontent.com/talamanaka/adition/master/check.sh
 wget https://raw.githubusercontent.com/talamanaka/adition/master/set.sh
 wget https://raw.githubusercontent.com/talamanaka/adition/master/q1.py
 wget https://raw.githubusercontent.com/talamanaka/adition/master/c
+wget https://raw.githubusercontent.com/talamanaka/adition/master/lo.sh
 
 echo " /usr/bin/python 2sh0dan.py $1 $2 $3"  > 2
-chmod +x 2sh0dan.py check.sh set.sh 2
+chmod +x 2sh0dan.py check.sh set.sh 2 lo.sh
 cp 2 /usr/bin/5
 cp 2sh0dan.py /usr/bin/2sh0dan.py
 ti=$(curl ipinfo.io/ip)
