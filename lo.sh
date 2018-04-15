@@ -14,4 +14,4 @@ do
  #       fi
  #       ((ii++))
    #      sed -i 1d $scan
-done <"c
+done <c
