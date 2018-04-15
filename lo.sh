@@ -8,7 +8,7 @@ do
         #if [ "$y" = "1" ]; then
         #echo "$line" >> found
 #        echo  $count "/" $ii "" "$line"
-        echo "$line"
+         python q1.py rancher "$line" "1"
         
         
  #       fi
