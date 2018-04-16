@@ -14,5 +14,5 @@ do
  #       fi
  #       ((ii++))
    #      sed -i 1d $scan
-done <c
+done <c1
 ./multi_check.sh
