@@ -315,8 +315,9 @@ def rapport():
 	print  bcolors.BOLD + bcolors.OKBLUE +"  [+]  SEARCH   For  : "+bcolors.OKGREEN+bcolors.BOLD+str(var_key)+" "+var_country+" "+var_page+bcolors.ENDC
 	print bcolors.BOLD + bcolors.OKBLUE + '  [+]  Results Found : '+bcolors.OKGREEN+bcolors.BOLD+str(count)+ bcolors.BOLD + bcolors.OKBLUE
 	print bcolors.BOLD + bcolors.OKBLUE + '  [+]  output file   : '+bcolors.OKGREEN+bcolors.BOLD+output_file+ bcolors.BOLD + bcolors.OKBLUE
-        driver.close()
-	resultat_loop_1()
+        #driver.close()
+	#resultat_loop_1()
+	eex()
 
         
 
