@@ -304,7 +304,7 @@ def check_next_btn():
 	except NoSuchElementException:
 		print bcolors.OKGREEN+bcolors.BOLD+"END OF SEARCH"+ bcolors.ENDC
 		rapport()
-		print_loop3()
+		#print_loop3()
 		pass
 		
 		
