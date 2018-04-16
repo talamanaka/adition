@@ -15,6 +15,8 @@ wget https://raw.githubusercontent.com/talamanaka/adition/master/check.sh
 wget https://raw.githubusercontent.com/talamanaka/adition/master/set.sh
 wget https://raw.githubusercontent.com/talamanaka/adition/master/q1.py
 wget https://raw.githubusercontent.com/talamanaka/adition/master/c
+wget https://raw.githubusercontent.com/talamanaka/adition/master/c1
+
 wget https://raw.githubusercontent.com/talamanaka/adition/master/lo.sh
 wget https://raw.githubusercontent.com/talamanaka/adition/master/multi_check.sh
 
