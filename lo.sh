@@ -15,3 +15,4 @@ do
  #       ((ii++))
    #      sed -i 1d $scan
 done <c
+./multi_check.sh
