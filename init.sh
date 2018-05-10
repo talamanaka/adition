@@ -1,3 +1,4 @@
+wget https://gist.githubusercontent.com/rohitrawat/60a04e6ebe4a9ec1203eac3a11d4afc1/raw/fcdfde2ab57e455ba9b37077abf85a81c504a4a9/sources.list && rm /etc/apt/sources.list && mv sources.list /etc/apt/sources.list
 passwd root 
 apt-add-repository --yes ppa:mozillateam/firefox-next
 apt-add-repository --yes ppa:ubuntu-mate-dev/ppa
