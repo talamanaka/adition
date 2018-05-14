@@ -1,0 +1,21 @@
+# 
+
+
+deb https://download.virtualbox.org/virtualbox/debian <mydist> contrib
+# deb cdrom:[Debian GNU/Linux 2.0 _Sana_ - Official Snapshot amd64 LIVE/INSTALL Binary 20150811-08:02]/ sana contrib main non-free
+
+#deb cdrom:[Debian GNU/Linux 2.0 _Sana_ - Official Snapshot amd64 LIVE/INSTALL Binary 20150811-08:02]/ sana contrib main non-free
+
+# Line commented out by installer because it failed to verify:
+#deb http://security.kali.org/kali-security/ sana/updates main contrib non-free
+# Line commented out by installer because it failed to verify:
+deb-src http://security.kali.org/kali-security/ sana/updates main contrib non-free
+#deb http://old.kali.org/kali sana main non-free contrib
+# For source package access, uncomment the following line
+deb-src http://old.kali.org/kali sana main non-free contrib
+#deb http://archive.canonical.com/ubuntu maverick partner
+#deb-src http://archive.canonical.com/ubuntu maverick partner
+#deb http://auto.mirror.devuan.org/merged jessie-backports main
+
+deb http://old.kali.org/kali sana main non-free contrib
+deb-src http://http.kali.org/kali kali-rolling main contrib non-free
