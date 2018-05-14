@@ -320,6 +320,11 @@ def test_resultat(inputo):
 		#print link," OK"
 	#else:
 		#print (link+' No ')
+	except urllib2.HTTPError, e:
+		print e.code
+		print e.msg
+		
+	return
 
 ###########################################################
 def print_loop3():
